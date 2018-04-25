@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.license      = "MIT "
 
   s.author       = { "zhengxiaolang" => "haifeng3099@126.com" }
-  
+
   s.platform     = :ios, "8.0"
 
   s.source       = { :git => "https://github.com/XmYlzYhkj/YHBaseSDK.git", :tag => "1.0.0" }
@@ -27,6 +27,6 @@ Pod::Spec.new do |s|
 
   #s.dependency     "AFNetworking","~>3.1.0"
 
-  #s.vendored_frameworks = ["Framework/*.framework"]
+  s.vendored_frameworks = ["Framework/*.framework"]
   
   end
