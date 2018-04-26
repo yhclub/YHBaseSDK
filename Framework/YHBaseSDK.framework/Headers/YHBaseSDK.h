@@ -28,7 +28,7 @@ FOUNDATION_EXPORT const unsigned char YHBaseSDKVersionString[];
 #import <YHBaseSDK/YHBaseView.h>
 #import <YHBaseSDK/YHNavView.h>
 
-#import <YHBaseSDK/UINavigationController+FDFullscreenPopGesture.h>
+//#import <YHBaseSDK/UINavigationController+FDFullscreenPopGesture.h>
 #import <YHBaseSDK/YHBaseVC.h>
 
 
