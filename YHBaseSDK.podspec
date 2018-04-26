@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.version      = "1.1.1"
   s.summary      = "YHBaseSDK is only a base sdk"
 
-  s.description  = "YHBaseSDK is only a base base sdk, incluse baseview,basevc,basept,basedp "
+  s.description  = "YHBaseSDK is only a base base sdk, incluse baseview,basevc,basept,basedp. And , YHBaseNavController has pop gesture ."
 
   s.homepage     = "https://github.com/XmYlzYhkj/YHBaseSDK"
 
