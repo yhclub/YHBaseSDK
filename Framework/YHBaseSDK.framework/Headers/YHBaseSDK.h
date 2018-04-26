@@ -2,7 +2,6 @@
 //  YHBaseSDK.h
 //  YHBaseSDK
 //
-//  Version 1.0.0
 //  Created by zxl on 2018/1/26.
 //  Copyright © 2018年 YH. All rights reserved.
 //
@@ -15,7 +14,9 @@ FOUNDATION_EXPORT double YHBaseSDKVersionNumber;
 //! Project version string for YHBaseSDK.
 FOUNDATION_EXPORT const unsigned char YHBaseSDKVersionString[];
 
-// In this header, you should import all the public headers of your framework using statements like #import <YHBaseSDK/PublicHeader.h>
+// In this header, you should import all the public headers of your framework using statements like #import <YHBaseSDK/YHBaseSDK.h>
+//  Version 1.0.*  hide FDFullscreenPopGesture
+//  Version 1.1.*  import FDFullscreenPopGesture
 
 #import <YHBaseSDK/YHDeviceHeader.h>
 #import <YHBaseSDK/YHGlobalHeader.h>
@@ -28,7 +29,7 @@ FOUNDATION_EXPORT const unsigned char YHBaseSDKVersionString[];
 #import <YHBaseSDK/YHBaseView.h>
 #import <YHBaseSDK/YHNavView.h>
 
-
+#import <YHBaseSDK/UINavigationController+FDFullscreenPopGesture.h>
 #import <YHBaseSDK/YHBaseVC.h>
 
 
