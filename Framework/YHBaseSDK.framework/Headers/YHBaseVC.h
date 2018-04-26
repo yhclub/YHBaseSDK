@@ -17,6 +17,8 @@
 
 @property(nonatomic,assign)BOOL hiddenNavView;
 
+@property(nonatomic,assign)BOOL isPresent;
+
 @property(nonatomic,strong)UIColor *backgroundColor;//背景视图颜色
 
 -(id)initWithTitle:(NSString *)title;

@@ -18,6 +18,7 @@ FOUNDATION_EXPORT const unsigned char YHBaseSDKVersionString[];
 
 #import <YHBaseSDK/YHDeviceHeader.h>
 #import <YHBaseSDK/YHGlobalHeader.h>
+#import <YHBaseSDK/YHBaseVCHelper.h>
 
 #import <YHBaseSDK/YHDataProtocol.h>
 #import <YHBaseSDK/YHPresenterProtocol.h>
@@ -27,11 +28,8 @@ FOUNDATION_EXPORT const unsigned char YHBaseSDKVersionString[];
 #import <YHBaseSDK/YHBaseView.h>
 #import <YHBaseSDK/YHNavView.h>
 
-//对外不使用FD
-//#import <YHBaseSDK/UINavigationController+FDFullscreenPopGesture.h>
-
+#import <YHBaseSDK/UINavigationController+FDFullscreenPopGesture.h>
 #import <YHBaseSDK/YHBaseVC.h>
-#import <YHBaseSDK/YHBaseSDKTest.h>
 
 
 
