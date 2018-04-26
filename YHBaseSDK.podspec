@@ -2,10 +2,10 @@
 Pod::Spec.new do |s|
 
   s.name         = "YHBaseSDK"
-  s.version      = "1.0.0"
+  s.version      = "1.0.2"
   s.summary      = "YHBaseSDK is only a base sdk"
 
-  s.description  = "YHBaseSDK is only a base base sdk, incluse baseview,basevc,basept,basedp,we import DFullscreenPopGesture in this version 1.0.0 "
+  s.description  = "YHBaseSDK is only a base base sdk, incluse baseview,basevc,basept,basedp "
 
   s.homepage     = "https://github.com/XmYlzYhkj/YHBaseSDK"
 
@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, "8.0"
 
-  s.source       = { :git => "https://github.com/XmYlzYhkj/YHBaseSDK.git", :tag => "1.0.0" }
+  s.source       = { :git => "https://github.com/XmYlzYhkj/YHBaseSDK.git", :tag => "1.0.2" }
 
   s.resources    = 'Resources/*.bundle'
 
