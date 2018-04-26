@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "YHViewProtocol.h"
 #import "YHNavView.h"
+
 @interface YHBaseVC : UIViewController<YHViewProtocol>
 
 @property(nonatomic,strong)YHNavView *navView;//导航栏

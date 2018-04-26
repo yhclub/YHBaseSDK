@@ -5,8 +5,10 @@
 //  Created by Jagtu on 2018/4/26.
 //  Copyright © 2018年 YH. All rights reserved.
 //
-
-#import <YHBaseSDK/YHBaseSDK.h>
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import "YHBaseNavController.h"
+#import "YHBaseVC.h"
 
 @interface YHBaseNavController (FDFullscreenPopGesture)
 
