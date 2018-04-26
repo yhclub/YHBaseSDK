@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "YHBaseSDK"
-  s.version      = "1.1.0"
+  s.version      = "1.1.1"
   s.summary      = "YHBaseSDK is only a base sdk"
 
   s.description  = "YHBaseSDK is only a base base sdk, incluse baseview,basevc,basept,basedp "
@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, "8.0"
 
-  s.source       = { :git => "https://github.com/XmYlzYhkj/YHBaseSDK.git", :tag => "1.1.0" }
+  s.source       = { :git => "https://github.com/XmYlzYhkj/YHBaseSDK.git", :tag => "1.1.1" }
 
   s.resources    = 'Resources/*.bundle'
 
