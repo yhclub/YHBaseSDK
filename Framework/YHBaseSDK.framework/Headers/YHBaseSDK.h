@@ -1,7 +1,7 @@
 //
 //  YHBaseSDK.h
 //  YHBaseSDK
-//  1.1.1
+//
 //  Created by zxl on 2018/1/26.
 //  Copyright © 2018年 YH. All rights reserved.
 //
