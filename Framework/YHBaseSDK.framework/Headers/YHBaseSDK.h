@@ -32,6 +32,9 @@ FOUNDATION_EXPORT const unsigned char YHBaseSDKVersionString[];
 #import <YHBaseSDK/YHBaseVC.h>
 #import <YHBaseSDK/YHBaseNavController+FDFullscreenPopGesture.h>
 
+#import <YHBaseSDK/YHBackGroundView.h>
+#import <YHBaseSDK/YHBackGroundScrollView.h>
+#import <YHBaseSDK/UIScrollView+YHScrollBackground.h>
 
-
+#import <YHBaseSDK/UIView+YHRect.h>
 

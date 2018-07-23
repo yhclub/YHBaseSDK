@@ -10,6 +10,8 @@
 #import "YHViewProtocol.h"
 #import "YHNavView.h"
 
+#import "YHBackGroundView.h"
+
 @interface YHBaseVC : UIViewController<YHViewProtocol>
 
 @property(nonatomic,strong)YHNavView *navView;//导航栏
@@ -21,6 +23,12 @@
 @property(nonatomic,assign)BOOL isPresent;
 
 @property(nonatomic,strong)UIColor *backgroundColor;//背景视图颜色
+
+@property (nonatomic,assign)BOOL enableNavigtionPan;//仅控制多层嵌套UIScroll时是否响应
+
+@property(nonatomic,strong)YHBackGroundView *baseView;//背景视图
+
+@property(nonatomic,assign)BOOL isLargeTitleType;//大标题属性
 
 -(id)initWithTitle:(NSString *)title;
 
@@ -137,5 +145,28 @@
  *  注销事件与通知
  */
 - (void)destroyEvents;
+
+/**
+ 大标题联动滚动
+
+ @param scrollView scroll
+ */
+-(void)yh_optimzeScroll:(UIScrollView*)scrollView;
+
+
+/**
+ 在大标题下面添加子view
+
+ @param subview view
+ */
+-(void)addSubviewForNavViewBlowTitle:(UIView *)subview;
+
+
+/**
+ 当大标题scale变化时候，触发事件
+
+ @param scale scale1s
+ */
+-(void)actionWhenTitleScaleChange:(CGFloat)scale;
 
 @end

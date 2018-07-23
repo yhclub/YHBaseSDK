@@ -12,13 +12,20 @@
 
 typedef void(^YHNavBtnBlock)(BOOL isLeft , NSInteger index);
 
+typedef void(^YHResetViewHeightBlock)(NSInteger addHeight);
+
 typedef NS_ENUM(NSUInteger, YHNavStyle) {
     YHNavStyleDefault = 0,//蓝底
     YHNavStyleLevel1 = 1,//白底 NavBarLevel1
+    YHNavStyleWhite = 2
+};
+
+typedef NS_ENUM(NSUInteger, YHNavTitleStyle) {
+    YHNavTitleStyleNormal = 0,//小标题
+    YHNavTitleStyleLarge = 1,//大标题
 };
 
 @interface YHNavView : UIView
-
 
 /**
  标题
@@ -79,19 +86,47 @@ typedef NS_ENUM(NSUInteger, YHNavStyle) {
  */
 @property(nonatomic,strong)UIView *bottomLine;
 
-
 /**
  默认为 50.f,用于控制titlelabel靠左边的距离，长度计算为屏幕宽度 - 2*titleLabelPadding
  */
 @property(nonatomic,assign)CGFloat titleLabelPadding;
 
--(void)setNavBtnBlock:(YHNavBtnBlock)navBtnBlock;
+
+/**
+ 大小标题模式
+ */
+@property (nonatomic,assign)YHNavTitleStyle navTitleType;
+
+@property(nonatomic,assign)CGFloat heightBlowLargeTitle;//大标题模式下面的view高度
+
+@property(nonatomic,assign)CGFloat maxHeight;//自身最大高度
+
+@property(nonatomic,assign)CGFloat largeTitleHeight;//标题最大高度
+
+@property(nonatomic,copy)YHResetViewHeightBlock resetViewHeihtBlock;
 
 -(void)setRightBtnHighlighted:(BOOL)highlighted atIndex:(NSInteger)index;
 
 -(void)setShadowImageColor:(UIColor *)shadowImageColor;
 
 -(void)setTitleLabelColor:(UIColor *)titleLabelColor;
+
+
+/**
+ 标题下面的为底层
+
+ @param subView <#subView description#>
+ */
+-(void)addSubviewBlowLargeTitle:(UIView *)subView;
+
+/**
+ 大标题模式下滚动缩放标题
+
+ @param scale 比例
+ */
+-(void)navigationBarAnimationWithScale:(CGFloat)scale;
+
+#pragma mark nav btn class method
 
 +(UIButton *)createBtnWithImageSize:(CGSize)imageSize withImage:(NSString *)imageName;
 

@@ -32,6 +32,8 @@
 
 #define WIDTHRATE VERTICAL_SCREEN_WIDTH/375.f //以4.7屏为主
 
+#define HEIGHTRATE VERTICAL_SCREEN_HEIGHT/667.f //以4.7屏为主
+
 // iPhone X
 #define  YH_iPhoneX (VERTICAL_SCREEN_WIDTH == 375.f && VERTICAL_SCREEN_HEIGHT == 812.f ? YES : NO)
 
@@ -51,5 +53,14 @@
 #define  YH_StatusBarAndNavBarHeight  (YH_StatusBarHeight + YH_NavigationBarHeight)
 
 #define YH_ViewSafeAreInsets(view) ({UIEdgeInsets insets; if(@available(iOS 11.0, *)) {insets = view.safeAreaInsets;} else {insets = UIEdgeInsetsZero;} insets;})
+
+
+#define ScreenHeigth [UIScreen mainScreen].bounds.size.height
+#define ScreenWidth [UIScreen mainScreen].bounds.size.width
+#define ScreenStatusBottom  ([UIApplication sharedApplication].statusBarFrame.origin.y + [UIApplication sharedApplication].statusBarFrame.size.height)
+
+#define YH_NavLargeTitleHeight 52.f
+
+#define NavigationBarLargeTitleHeight (YH_StatusBarHeight + YH_NavigationBarHeight + YH_NavLargeTitleHeight + 0)
 
 #endif /* YHDeviceHeader_h */

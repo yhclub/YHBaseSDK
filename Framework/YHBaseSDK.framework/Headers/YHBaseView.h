@@ -35,6 +35,7 @@
 /**
  设置frame
  备注：该方法与系统的layoutSubviews 有一个字母不一样
+      但是,这里调用了layoutSubviews方法
  */
 -(void)layoutSubViews;
 
