@@ -20,11 +20,7 @@ DESC
 
   s.platform     = :ios, "8.0"
 
-<<<<<<< HEAD
   s.source       = { :git => "https://github.com/XmYlzYhkj/YHBaseSDK.git", :tag => s.version.to_s  }
-=======
-  s.source       = { :git => "https://github.com/XmYlzYhkj/YHBaseSDK.git", :tag => "1.1.3" }
->>>>>>> 3e8c5fea8aaad4437a30623d9ff5d5c8d80c3238
 
   s.resources    = 'Resources/*.bundle'
 
