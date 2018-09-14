@@ -34,10 +34,11 @@
 
 #define HEIGHTRATE VERTICAL_SCREEN_HEIGHT/667.f //以4.7屏为主
 
-// iPhone X | iPhone XS
-#define  YH_iPhoneX (VERTICAL_SCREEN_WIDTH == 375.f && VERTICAL_SCREEN_HEIGHT == 812.f ? YES : NO)
-// iPhone XR | iPhone XS Max
+// iPhone X | iPhone XS || iPhone XR | iPhone XS Max
+#define  YH_iPhoneXS (VERTICAL_SCREEN_WIDTH == 375.f && VERTICAL_SCREEN_HEIGHT == 812.f ? YES : NO)
 #define  YH_iPhoneXR (VERTICAL_SCREEN_WIDTH == 414.f && VERTICAL_SCREEN_HEIGHT == 896.f ? YES : NO)
+
+#define  YH_iPhoneX ((YH_iPhoneXS||YH_iPhoneXR) ? YES : NO)
 
 // Status bar height.
 #define  YH_StatusBarHeight  [UIApplication sharedApplication].statusBarFrame.size.height
@@ -46,7 +47,7 @@
 #define  YH_NavigationBarHeight  44.f
 
 // Tabbar safe bottom margin.
-#define  YH_TabbarSafeBottomMargin         ((YH_iPhoneX || YH_iPhoneXR) ? 34.f : 0.f)
+#define  YH_TabbarSafeBottomMargin         (YH_iPhoneX ? 34.f : 0.f)
 
 // Tabbar height.
 #define  YH_TAB_BAR_HEIGHT         (YH_TabbarSafeBottomMargin + 49.f)

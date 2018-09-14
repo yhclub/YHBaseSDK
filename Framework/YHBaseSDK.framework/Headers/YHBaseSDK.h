@@ -17,6 +17,7 @@ FOUNDATION_EXPORT const unsigned char YHBaseSDKVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <YHBaseSDK/YHBaseSDK.h>
 //  Version 1.0.*  hide FDFullscreenPopGesture
 //  Version 1.1.*  import FDFullscreenPopGesture
+//  Version 1.1.3  适配iPhoneX系列
 
 #import <YHBaseSDK/YHDeviceHeader.h>
 #import <YHBaseSDK/YHGlobalHeader.h>
