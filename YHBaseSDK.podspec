@@ -3,11 +3,11 @@ Pod::Spec.new do |s|
 
   s.name         = "YHBaseSDK"
   s.version      = "1.1.5"
-  s.summary      = "YHBaseSDK is only a base sdk"
+  s.summary      = "YHBaseSDK is only a base sdk."
 
   s.description  =  <<-DESC
 YHBaseSDK is only a base base sdk, incluse baseview,basevc,basept,basedp. And , YHBaseNavController has pop gesture . 
-V1.1.3 适配iPhoneX系列；  
+V1.1.3 适配iPhoneX系列;
 
 DESC
 
