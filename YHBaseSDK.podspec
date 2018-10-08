@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
 
   s.description  =  <<-DESC
 YHBaseSDK is only a base base sdk, incluse baseview,basevc,basept,basedp. And , YHBaseNavController has pop gesture . 
-V1.1.3 适配iPhoneX系列;
+V1.1.5 适配iPhoneX系列;
 
 DESC
 
