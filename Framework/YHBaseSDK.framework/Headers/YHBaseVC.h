@@ -107,9 +107,14 @@
 
 
 /**
+ 添加约束(use -addConstraints)
+ */
+-(void)addContraint NS_DEPRECATED_IOS(2_0,3_0, "use -addConstraints");
+
+/**
  添加约束
  */
--(void)addContraint;
+-(void)addConstraints;
 
 
 /**

@@ -18,6 +18,7 @@ FOUNDATION_EXPORT const unsigned char YHBaseSDKVersionString[];
 //  Version 1.0.*  hide FDFullscreenPopGesture
 //  Version 1.1.*  import FDFullscreenPopGesture
 //  Version 1.1.5  适配iPhoneX系列
+//  Version 1.1.6 addContraint弃用，改为addConstraints
 
 #import <YHBaseSDK/YHDeviceHeader.h>
 #import <YHBaseSDK/YHGlobalHeader.h>
