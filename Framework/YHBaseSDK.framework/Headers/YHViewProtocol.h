@@ -32,7 +32,7 @@
 /**
  添加约束
  */
--(void)addContraint;
+-(void)addConstraints;
 
 
 /**
