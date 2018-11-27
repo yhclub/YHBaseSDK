@@ -22,13 +22,6 @@
 #define VERTICAL_SCREEN_WIDTH_7    ([UIScreen mainScreen].bounds.size.width/7.f)
 #define VERTICAL_SCREEN_WIDTH_8    ([UIScreen mainScreen].bounds.size.width/8.f)
 
-#define IS_IOS7 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7) //是否是运行iOS7系统
-
-#define IS_IOS9 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 9)
-
-#define IS_IOS11  ([[[UIDevice currentDevice] systemVersion] floatValue] >= 11) //是否是运行iOS11系统
-
-#define FontWithSize(fontSize) [UIFont fontWithName:@"Courier New" size:fontSize]
 
 #define WIDTHRATE VERTICAL_SCREEN_WIDTH/375.f //以4.7屏为主
 
@@ -57,7 +50,6 @@
 
 #define YH_ViewSafeAreInsets(view) ({UIEdgeInsets insets; if(@available(iOS 11.0, *)) {insets = view.safeAreaInsets;} else {insets = UIEdgeInsetsZero;} insets;})
 
-
 #define ScreenHeigth [UIScreen mainScreen].bounds.size.height
 #define ScreenWidth [UIScreen mainScreen].bounds.size.width
 #define ScreenStatusBottom  ([UIApplication sharedApplication].statusBarFrame.origin.y + [UIApplication sharedApplication].statusBarFrame.size.height)
@@ -65,5 +57,31 @@
 #define YH_NavLargeTitleHeight 52.f
 
 #define NavigationBarLargeTitleHeight (YH_StatusBarHeight + YH_NavigationBarHeight + YH_NavLargeTitleHeight + 0)
+
+/*判断设备的分辨率*/
+
+#define iPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+
+#define iPhone4 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 960), [[UIScreen mainScreen] currentMode].size) : NO)
+
+#define iPhone6 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(750, 1334), [[UIScreen mainScreen] currentMode].size) : NO)
+
+#define iPhone6plus ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size) : NO)
+
+#define iPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
+
+#define iPad ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(768, 1024), [[UIScreen mainScreen] currentMode].size) : NO)
+
+#define iPad_HD ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(2048,1536), [[UIScreen mainScreen] currentMode].size) : NO)
+
+#define IS_IOS11  ([[[UIDevice currentDevice] systemVersion] floatValue] >= 11) //是否是运行iOS11系统
+#define IS_IOS10 [[[UIDevice currentDevice]systemVersion]floatValue] >= 10.0 ? YES:NO
+#define IS_IOS9 [[[UIDevice currentDevice]systemVersion]floatValue] >= 9.0 ? YES:NO
+#define IS_IOS8 [[[UIDevice currentDevice]systemVersion]floatValue] >= 8.0 ? YES:NO
+#define IS_IOS7 [[[UIDevice currentDevice]systemVersion]floatValue] >= 7.0 ? YES:NO
+#define IS_IOS6 [[[UIDevice currentDevice]systemVersion]floatValue] < 7.0 ? YES:NO
+
+#define FontWithSize(fontSize) [UIFont fontWithName:@"Courier New" size:fontSize]
+
 
 #endif /* YHDeviceHeader_h */
