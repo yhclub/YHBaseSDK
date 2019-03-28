@@ -9,11 +9,6 @@
 #ifndef YHDeviceHeader_h
 #define YHDeviceHeader_h
 
-#define VERTICAL_SCREEN_WIDTH    [UIScreen mainScreen].bounds.size.width    //竖屏宽度
-#define VERTICAL_SCREEN_HEIGHT   [UIScreen mainScreen].bounds.size.height   //竖屏高度
-#define HORIZONTAL_SCREEN_WIDTH  [UIScreen mainScreen].bounds.size.height  //横屏宽度
-#define HORIZONTAL_SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.width //横屏高度
-
 
 #define VERTICAL_SCREEN_WIDTH_2    ([UIScreen mainScreen].bounds.size.width/2.f)
 #define VERTICAL_SCREEN_WIDTH_3    ([UIScreen mainScreen].bounds.size.width/3.f)
@@ -23,18 +18,20 @@
 #define VERTICAL_SCREEN_WIDTH_8    ([UIScreen mainScreen].bounds.size.width/8.f)
 
 
-#define WIDTHRATE VERTICAL_SCREEN_WIDTH/375.f //以4.7屏为主
+#define WIDTHRATE [UIScreen mainScreen].bounds.size.width/375.f //以4.7屏为主
 
-#define HEIGHTRATE VERTICAL_SCREEN_HEIGHT/667.f //以4.7屏为主
+#define HEIGHTRATE [UIScreen mainScreen].bounds.size.height/667.f //以4.7屏为主
 
 // iPhone X | iPhone XS || iPhone XR | iPhone XS Max
-#define  YH_iPhoneXS (VERTICAL_SCREEN_WIDTH == 375.f && VERTICAL_SCREEN_HEIGHT == 812.f ? YES : NO)
-#define  YH_iPhoneXR (VERTICAL_SCREEN_WIDTH == 414.f && VERTICAL_SCREEN_HEIGHT == 896.f ? YES : NO)
+#define  YH_iPhoneXS ([UIScreen mainScreen].bounds.size.width == 375.f && [UIScreen mainScreen].bounds.size.height == 812.f ? YES : NO)
+#define  YH_iPhoneXR ([UIScreen mainScreen].bounds.size.width == 414.f && [UIScreen mainScreen].bounds.size.height == 896.f ? YES : NO)
 
 #define  YH_iPhoneX ((YH_iPhoneXS||YH_iPhoneXR) ? YES : NO)
 
 // Status bar height.
 #define  YH_StatusBarHeight  [UIApplication sharedApplication].statusBarFrame.size.height
+
+#define  YH_StatusBarHeight_Origin  (YH_iPhoneX ? 44.f : 20.f)
 
 // Navigation bar height.
 #define  YH_NavigationBarHeight  44.f
@@ -56,7 +53,12 @@
 
 #define YH_NavLargeTitleHeight 52.f
 
-#define NavigationBarLargeTitleHeight (YH_StatusBarHeight + YH_NavigationBarHeight + YH_NavLargeTitleHeight + 0)
+#define YH_NavigationLargeTitleBarHeight_Origin (YH_StatusBarHeight_Origin + YH_NavigationBarHeight + YH_NavLargeTitleHeight + 0)
+
+#define VERTICAL_SCREEN_WIDTH    [UIScreen mainScreen].bounds.size.width    //竖屏宽度
+#define VERTICAL_SCREEN_HEIGHT   ([UIScreen mainScreen].bounds.size.height+YH_StatusBarHeight_Origin-YH_StatusBarHeight)   //竖屏高度
+#define HORIZONTAL_SCREEN_WIDTH  [UIScreen mainScreen].bounds.size.height  //横屏宽度
+#define HORIZONTAL_SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.width //横屏高度
 
 /*判断设备的分辨率*/
 

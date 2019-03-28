@@ -4,6 +4,7 @@
 //
 //  Created by zxl on 2018/1/26.
 //  Modify by Jagtu on 2018/11/27.
+//  Modify by Jagtu on 2019/03/27.
 //  Copyright © 2018年 YH. All rights reserved.
 //
 
@@ -31,6 +32,7 @@ FOUNDATION_EXPORT const unsigned char YHBaseSDKVersionString[];
 #import <YHBaseSDK/YHBaseNavController.h>
 #import <YHBaseSDK/YHBaseView.h>
 #import <YHBaseSDK/YHNavView.h>
+#import <YHBaseSDK/YHBGView.h>
 
 #import <YHBaseSDK/YHBaseVC.h>
 #import <YHBaseSDK/YHBaseNavController+FDFullscreenPopGesture.h>
