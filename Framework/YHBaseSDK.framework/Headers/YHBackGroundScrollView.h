@@ -10,7 +10,4 @@
 
 @interface YHBackGroundScrollView : UIScrollView
 
--(void)didAddSubviewToContainer:(NSObject *)item;
--(void)willRemoveSubviewFromContainer:(UIView *)view;
-
 @end

@@ -20,7 +20,8 @@ FOUNDATION_EXPORT const unsigned char YHBaseSDKVersionString[];
 //  Version 1.0.*  hide FDFullscreenPopGesture
 //  Version 1.1.*  import FDFullscreenPopGesture
 //  Version 1.1.5  适配iPhoneX系列
-//  V1.1.6 addContraint->addConstraints
+//  Version 1.1.6  addContraint->addConstraints
+//  Version 1.1.7  适配个人热点共享
 
 #import <YHBaseSDK/YHDeviceHeader.h>
 #import <YHBaseSDK/YHGlobalHeader.h>
@@ -32,7 +33,6 @@ FOUNDATION_EXPORT const unsigned char YHBaseSDKVersionString[];
 #import <YHBaseSDK/YHBaseNavController.h>
 #import <YHBaseSDK/YHBaseView.h>
 #import <YHBaseSDK/YHNavView.h>
-#import <YHBaseSDK/YHBGView.h>
 
 #import <YHBaseSDK/YHBaseVC.h>
 #import <YHBaseSDK/YHBaseNavController+FDFullscreenPopGesture.h>

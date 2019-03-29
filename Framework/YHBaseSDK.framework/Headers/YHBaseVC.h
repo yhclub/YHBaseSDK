@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "YHViewProtocol.h"
 #import "YHNavView.h"
-#import "YHBGView.h"
 
 #import "YHBackGroundView.h"
 
@@ -17,7 +16,7 @@
 
 @property(nonatomic,strong)YHNavView *navView;//导航栏
 
-@property(nonatomic,strong)YHBGView *bgView;//背景视图
+@property(nonatomic,strong)UIView *bgView;//背景视图
 
 @property(nonatomic,assign)BOOL hiddenNavView;
 
@@ -30,8 +29,6 @@
 @property(nonatomic,strong)YHBackGroundView *baseView;//背景视图
 
 @property(nonatomic,assign)BOOL isLargeTitleType;//大标题属性
-
-@property(nonatomic,assign)BOOL isAutoCloseKeyboard;//点击关闭键盘，default：NO
 
 -(id)initWithTitle:(NSString *)title;
 
@@ -155,11 +152,11 @@
 - (void)destroyEvents;
 
 /**
- 大标题联动滚动。该方法已废弃，兼容旧版内部为空的实现。
- 
+ 大标题联动滚动
+
  @param scrollView scroll
  */
--(void)yh_optimzeScroll:(UIScrollView*)scrollView NS_DEPRECATED_IOS(2_0,3_0, "新版本无需在重写。");;
+-(void)yh_optimzeScroll:(UIScrollView*)scrollView;
 
 
 /**

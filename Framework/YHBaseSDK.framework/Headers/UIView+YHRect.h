@@ -78,4 +78,15 @@
  */
 @property (nonatomic) CGSize size;
 
+
+/**
+ YHNavBtn 是否可以放大
+ */
+@property(nonatomic,assign)BOOL yh_scaleable;
+
+/**
+ YHNavBtn 是否可以滚动
+ */
+@property(nonatomic,assign)BOOL yh_scrollable;
+
 @end
