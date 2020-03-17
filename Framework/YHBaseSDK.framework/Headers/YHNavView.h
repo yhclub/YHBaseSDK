@@ -14,15 +14,10 @@ typedef void(^YHNavBtnBlock)(BOOL isLeft , NSInteger index);
 
 typedef void(^YHResetViewHeightBlock)(NSInteger addHeight);
 
-//辅色
-FOUNDATION_EXPORT NSString *YHNavDefaultColorHexString;
-FOUNDATION_EXPORT NSString *YHNavDefaultTextColorHexString;
-FOUNDATION_EXPORT NSString *YHNavBgColorHexString;
-
 typedef NS_ENUM(NSUInteger, YHNavStyle) {
-    YHNavStyleDefault = 0,//默认背景色YHNavDefaultColorHexString
-    YHNavStyleWhite = 1,
-    YHNavStyleLevel1 = YHNavStyleWhite,//白底 NavBarLevel1
+    YHNavStyleDefault = 0,//蓝底
+    YHNavStyleLevel1 = 1,//白底 NavBarLevel1
+    YHNavStyleWhite = 2
 };
 
 typedef NS_ENUM(NSUInteger, YHNavTitleStyle) {
