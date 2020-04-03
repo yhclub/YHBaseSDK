@@ -2,9 +2,6 @@
 //  YHBaseSDK.h
 //  YHBaseSDK
 //
-//  Created by zxl on 2018/1/26.
-//  Modify by Jagtu on 2018/11/27.
-//  Modify by Jagtu on 2019/03/27.
 //  Copyright © 2018年 YH. All rights reserved.
 //
 
@@ -17,10 +14,13 @@ FOUNDATION_EXPORT double YHBaseSDKVersionNumber;
 FOUNDATION_EXPORT const unsigned char YHBaseSDKVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <YHBaseSDK/YHBaseSDK.h>
-//  Version 1.0.*  hide YHFDFullscreenPopGesture
-//  Version 1.1.*  import YHFDFullscreenPopGesture
-//  Version 1.1.5  适配iPhoneX系列
-//  V1.1.6 addContraint->addConstraints
+//  Version 1.0.0  Created by zxl on 2018/1/26.
+//  Version 1.0.*  hide FDFullscreenPopGesture
+//  Version 1.1.*  import FDFullscreenPopGesture
+//  Version 1.1.5  Modify by Jagtu on 2018/11/27 适配iPhoneX系列
+//  Version 1.1.6  addContraint->addConstraints
+//  Version 1.1.7  Modify by Jagtu on 2019/04/15 适配个人热点共享;支持修改标题颜色
+//  Version 1.1.9 feat:FDFullscreenPopGesture修改了文件名称为YHFDFullscreenPopGesture，避免冲突
 
 #import <YHBaseSDK/YHDeviceHeader.h>
 #import <YHBaseSDK/YHGlobalHeader.h>
