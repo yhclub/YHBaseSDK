@@ -1,16 +1,14 @@
 //
-//  YHBaseNavController+YHFDFullscreenPopGesture.h
+//  UINavigationController+YHFDFullscreenPopGesture.h
 //  YHBaseSDK
 //
-//  Created by Jagtu on 2018/4/26.
+//  Created by Jagtu on 2018/04/26.
+//  Modify by Jagtu on 2021/01/14.
 //  Copyright © 2018年 YH. All rights reserved.
 //
-#import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "YHBaseNavController.h"
-#import "YHBaseVC.h"
 
-@interface YHBaseNavController (YHFDFullscreenPopGesture)
+@interface UINavigationController (YHFDFullscreenPopGesture)
 
 /// The gesture recognizer that actually handles interactive pop.
 @property (nonatomic, strong, readonly) UIPanGestureRecognizer *yhfd_fullscreenPopGestureRecognizer;
@@ -27,7 +25,7 @@
 /// Allows any view controller to disable interactive pop gesture, which might
 /// be necessary when the view controller itself handles pan gesture in some
 /// cases.
-@interface YHBaseVC (YHFDFullscreenPopGesture)
+@interface UIViewController (YHFDFullscreenPopGesture)
 
 /// Whether the interactive pop gesture is disabled when contained in a navigation
 /// stack.

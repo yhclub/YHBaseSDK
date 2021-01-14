@@ -118,11 +118,18 @@ typedef NS_ENUM(NSUInteger, YHNavTitleStyle) {
 
 
 /**
- 标题下面的为底层
+ 标题下面的视图
 
- @param subView <#subView description#>
+ @param subView 视图，将被设置frame，高度由heightBlowLargeTitle控制
  */
 -(void)addSubviewBlowLargeTitle:(UIView *)subView;
+
+/**
+ 移除标题下面的视图
+
+ @param subView 视图
+ */
+-(void)removeSubviewBlowLargeTitle;
 
 /**
  大标题模式下滚动缩放标题
