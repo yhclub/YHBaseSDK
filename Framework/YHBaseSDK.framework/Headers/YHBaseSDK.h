@@ -15,7 +15,7 @@
 //  Version 1.1.6  addContraint->addConstraints
 //  Version 1.1.7  Modify by Jagtu on 2019/04/15 适配个人热点共享;支持修改标题颜色
 //  Version 1.1.9  feat:FDFullscreenPopGesture修改了文件名称为YHFDFullscreenPopGesture，避免冲突
-//  Version 1.1.10 Modify by Jagtu on 2021/01/15 适配iPhone12系列
+//  Version 1.1.11 Modify by Jagtu on 2021/01/15 适配iPhone12系列
 
 #import <YHBaseSDK/YHDeviceHeader.h>
 #import <YHBaseSDK/YHGlobalHeader.h>

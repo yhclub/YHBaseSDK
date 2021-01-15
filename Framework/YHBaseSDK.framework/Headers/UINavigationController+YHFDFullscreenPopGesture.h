@@ -3,7 +3,7 @@
 //  YHBaseSDK
 //
 //  Created by Jagtu on 2018/04/26.
-//  Modify by Jagtu on 2021/01/14.
+//  Modify  by Jagtu on 2021/01/14.
 //  Copyright © 2018年 YH. All rights reserved.
 //
 #import <UIKit/UIKit.h>
