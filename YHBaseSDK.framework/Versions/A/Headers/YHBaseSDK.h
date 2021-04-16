@@ -1,7 +1,7 @@
 //
 //  YHBaseSDK.h
 //  YHBaseSDK
-//
+//  V1.1.14
 //  Copyright © 2018年 YH. All rights reserved.
 //
 
@@ -17,6 +17,9 @@
 //  Version 1.1.9  feat:FDFullscreenPopGesture修改了文件名称为YHFDFullscreenPopGesture，避免冲突
 //  Version 1.1.11 Modify by Jagtu on 2021/01/15 适配iPhone12系列
 //  Version 1.1.11 Modify by Jagtu on 2021/02/01
+//  Version 1.1.14 Modify by Jagtu on 2021/04/16 YHFDFullscreenPopGesture update
+///
+///
 
 #import <YHBaseSDK/YHDeviceHeader.h>
 #import <YHBaseSDK/YHGlobalHeader.h>

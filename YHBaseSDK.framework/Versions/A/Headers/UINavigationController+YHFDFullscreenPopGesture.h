@@ -27,13 +27,13 @@
 /// cases.
 @interface UIViewController (YHFDFullscreenPopGesture)
 
-/// Whether the interactive pop gesture is disabled when contained in a navigation
-/// stack.
+/// Whether the interactive pop gesture is disabled when contained in a navigation stack.
+/// Default to NO, able it if you don't want so.
 @property (nonatomic, assign) BOOL yhfd_interactivePopDisabled;
 
 /// Indicate this view controller prefers its navigation bar hidden or not,
 /// checked when view controller based navigation bar's appearance is enabled.
-/// Default to NO, bars are more likely to show.
+/// Default is self.navigationController.navigationBarHidden, bars are more likely to show.
 @property (nonatomic, assign) BOOL yhfd_prefersNavigationBarHidden;
 
 /// Max allowed initial distance to left edge when you begin the interactive pop

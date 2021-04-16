@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "YHBaseSDK"
-  s.version      = "1.1.13"
+  s.version      = "1.1.14"
   s.summary      = "YHBaseSDK is only a base sdk."
 
   s.description  =  <<-DESC
