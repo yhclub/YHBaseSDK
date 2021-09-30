@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "YHBaseSDK"
-  s.version      = "1.1.15"
+  s.version      = "1.1.16"
   s.summary      = "YHBaseSDK is only a base sdk."
 
   s.description  =  <<-DESC
@@ -13,7 +13,7 @@ YHBaseSDK is only a base base sdk, incluse baseview,basevc,basept,basedp. And , 
 【V1.1.9】Modify by Jagtu on 2020/03/17 修改FDFullscreenPopGesture为YHFDFullscreenPopGesture
 【V1.1.11】Modify by Jagtu on 2021/01/15 适配iPhone12系列导航栏高度；UINavigationController+YHFDFullscreenPopGesture
 【V1.1.12】修改项目结构
-【V1.1.15】兼容FDFullscreenPopGesture
+【V1.1.16】兼容FDFullscreenPopGesture
 
 DESC
 
