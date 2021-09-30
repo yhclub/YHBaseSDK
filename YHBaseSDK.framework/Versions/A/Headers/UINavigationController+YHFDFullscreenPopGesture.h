@@ -11,7 +11,7 @@
 @interface UINavigationController (YHFDFullscreenPopGesture)
 
 /// The gesture recognizer that actually handles interactive pop.
-@property (nonatomic, strong, readonly) UIPanGestureRecognizer *yhfd_fullscreenPopGestureRecognizer;
+@property (nonatomic, strong, readonly) UIPanGestureRecognizer *fd_fullscreenPopGestureRecognizer;
 
 /// A view controller is able to control navigation bar's appearance by itself,
 /// rather than a global way, checking "yhfd_prefersNavigationBarHidden" property.
