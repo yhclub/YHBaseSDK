@@ -8,3 +8,4 @@ YHBaseSDK：易惠基础SDK
 //  Version 1.0.*  hide FDFullscreenPopGesture
 //  Version 1.1.*  import FDFullscreenPopGesture
 //  Version 1.1.14 UINavigationController+YHFDFullscreenPopGesture更新，支持默认使用self.navigationController.navigationBarHidden设置导航栏隐藏
+//  Version【V1.1.16】兼容FDFullscreenPopGesture
